@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        String s = "AaBbCcDd";
+        String u = "";
+        String l = "";
+        
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (Character.isUpperCase(c)) u += c;
+            if (Character.isLowerCase(c)) l += c;
+        }
+        
+        System.out.println("Заглавные: " + u);
+        System.out.println("Строчные: " + l);
+    }
+}
