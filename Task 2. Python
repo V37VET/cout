@@ -1,0 +1,8 @@
+s = ['1', 'D', '3', 'B', 'c', '5','D']
+
+l = ''.join(i for i in s if not i.isdigit())
+n = ''.join(i for i in s if i.isdigit())
+
+del s
+print('Цифры:', n)
+print('Буквы:', l)
