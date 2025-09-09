@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        char[] s = {'1', 'D', '3', 'B', 'c', '5', 'D'};
+        String n = "";
+        String l = "";
+        
+        for (char i : s) {
+            if (Character.isDigit(i)) n += i;
+            else l += i;
+        }
+        
+        System.out.println("Цифры: " + n);
+        System.out.println("Буквы: " + l);
+    }
+}
