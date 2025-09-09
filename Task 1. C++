@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    char s[] = {'1', 'D', '3', 'B', 'c', '5', 'D'};
+    string n, l;
+    
+    for (char i : s) {
+        if (isdigit(i)) n += i;
+        else l += i;
+    }
+    
+    cout << "Цифры: " << n << endl;
+    cout << "Буквы: " << l << endl;
+    
+    return 0;
+}
